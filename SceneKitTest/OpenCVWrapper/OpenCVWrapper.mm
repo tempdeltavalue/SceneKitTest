@@ -6,17 +6,11 @@
 //  Copyright © 2023 liu_temp. All rights reserved.
 //
 
-//#ifdef __cplusplus
-//#pragma clang diagnostic push
-//#pragma clang diagnostic ignored "-Wdocumentation"
-//
-//
-//
-//#pragma clang pop
-//#endif
+
 
 #import <opencv2/opencv.hpp>
 #import "OpenCVWrapper.h"
+#import "sam.hpp"
 
 using namespace std;
 using namespace cv;
@@ -25,13 +19,6 @@ using namespace cv;
 
 @interface OpenCVWrapper ()
 
-//#ifdef __cplusplus
-//
-//+ (Mat)_grayFrom:(Mat)source;
-//+ (Mat)_matFrom:(UIImage *)source;
-//+ (UIImage *)_imageFrom:(Mat)source;
-//
-//#endif
 
 @end
 
@@ -46,8 +33,58 @@ using namespace cv;
     return [OpenCVWrapper _imageFrom:[OpenCVWrapper _edgeFrom:[OpenCVWrapper _matFrom:source]]];
 }
 
+
++ (UIImage *)runSAM:(UIImage *)source {
+    cout << "SAM: ";
+    return [OpenCVWrapper _imageFrom:[OpenCVWrapper _SamFrom:[OpenCVWrapper _matFrom:source]]];
+}
+
 #pragma mark Private
 
++(Mat)_SamFrom:(Mat)image {
+    // model loading
+    Sam sam;
+    NSString *enc_nstring_path = [[NSBundle mainBundle] pathForResource:@"mobile_sam_preprocess" ofType:@"onnx"];
+    
+    NSString *dec_nstring_path = [[NSBundle mainBundle] pathForResource:@"mobile_sam" ofType:@"onnx"];
+    
+
+    std::string pathEncoder = std::string([enc_nstring_path UTF8String]);
+    std::string pathDecoder = std::string([dec_nstring_path UTF8String]);
+    
+    std::cout<<"loadModel started"<<std::endl;
+    
+    bool terminated = false; 
+    bool successLoadModel = sam.loadModel(pathEncoder, pathDecoder,1, &terminated);
+    if(!successLoadModel){
+      std::cout<<"loadModel error"<<std::endl;
+    }
+    
+    auto inputSize = sam.getInputSize();
+    cvtColor(image, image, COLOR_BGRA2RGB);
+
+    cv::resize(image, image, inputSize);
+    std::cout<<"preprocessImage started"<<std::endl;
+    
+    
+    bool successPreprocessImage = sam.preprocessImage(image, &terminated);
+    if(!successPreprocessImage){
+      std::cout<<"preprocessImage error"<<std::endl;
+    } else {
+        std::cout<<"preprocessImage success"<<std::endl;
+
+    }
+    std::list<cv::Point> points, nagativePoints;
+    cv::Rect roi;
+    // 1st object and 1st click
+    int previousMaskIdx = -1; // An index to use the previous mask result
+    bool isNextGetMask = true; // Set true when start labeling a new object
+    points.push_back({400, 400});
+    cv::Mat mask = sam.getMask(points, nagativePoints, roi, previousMaskIdx, isNextGetMask);
+    std::cout<<"get mask is success"<<std::endl;
+
+    return mask;
+}
 
 + (Mat)_edgeFrom:(Mat)source {
     cout << "-> grayFrom ->";

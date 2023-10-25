@@ -12,5 +12,6 @@
 @interface OpenCVWrapper : NSObject
 
 + (UIImage *)edgeDetection:(UIImage *)source;
++ (UIImage *)runSAM:(UIImage *)source;
 
 @end

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SceneKitTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wc6-tS-GPm">
+                                <rect key="frame" x="0.0" y="48" width="414" height="400"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="FfE-UB-MpI"/>
+                                </constraints>
+                            </sceneKitView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smilley_flower" translatesAutoresizingMaskIntoConstraints="NO" id="eTw-Wu-VK1">
+                                <rect key="frame" x="0.0" y="448" width="414" height="414"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eTw-Wu-VK1" secondAttribute="trailing" id="2a1-pH-cPH"/>
+                            <constraint firstItem="eTw-Wu-VK1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UyX-RJ-qB9"/>
+                            <constraint firstItem="eTw-Wu-VK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zjo-us-7qI"/>
+                            <constraint firstItem="Wc6-tS-GPm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hv7-K2-BNV"/>
+                            <constraint firstItem="Wc6-tS-GPm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oCu-yF-jJR"/>
+                            <constraint firstItem="eTw-Wu-VK1" firstAttribute="top" secondItem="Wc6-tS-GPm" secondAttribute="bottom" id="xBm-GI-t4w"/>
+                            <constraint firstItem="Wc6-tS-GPm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xs3-d8-F4p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultImageView" destination="eTw-Wu-VK1" id="8aC-an-iuZ"/>
+                        <outlet property="sceneView" destination="Wc6-tS-GPm" id="69E-bc-Zwe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="smilley_flower" width="800" height="891"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

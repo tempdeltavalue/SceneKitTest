@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		280011F82AE9343E00E8D2F8 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 280011F62AE9340400E8D2F8 /* opencv2.framework */; };
+		280012002AE9360A00E8D2F8 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 280011FF2AE9360A00E8D2F8 /* OpenCVWrapper.mm */; };
+		280012032AE9384D00E8D2F8 /* opencv2.framework in Sources */ = {isa = PBXBuildFile; fileRef = 280011F62AE9340400E8D2F8 /* opencv2.framework */; };
+		280130082AE8AB000031BE36 /* 12222_Cat_v1_l3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 280130042AE8AB000031BE36 /* 12222_Cat_v1_l3.obj */; };
+		280130092AE8AB000031BE36 /* Cat_bump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 280130052AE8AB000031BE36 /* Cat_bump.jpg */; };
+		2801300A2AE8AB000031BE36 /* Cat_diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 280130062AE8AB000031BE36 /* Cat_diffuse.jpg */; };
+		2801300B2AE8AB000031BE36 /* 12222_Cat_v1_l3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 280130072AE8AB000031BE36 /* 12222_Cat_v1_l3.mtl */; };
+		280130102AE8AB590031BE36 /* 12270_Frog_v1_L3.obj in Resources */ = {isa = PBXBuildFile; fileRef = 2801300D2AE8AB580031BE36 /* 12270_Frog_v1_L3.obj */; };
+		280130112AE8AB590031BE36 /* 12270_Frog_v1_L3.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 2801300E2AE8AB590031BE36 /* 12270_Frog_v1_L3.mtl */; };
+		280130122AE8AB590031BE36 /* frog_diff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2801300F2AE8AB590031BE36 /* frog_diff.jpg */; };
+		2801303B2AE8AE780031BE36 /* Flowertx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2801302E2AE8AE770031BE36 /* Flowertx.jpg */; };
+		2801303C2AE8AE780031BE36 /* leaves.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2801302F2AE8AE770031BE36 /* leaves.jpg */; };
+		2801303D2AE8AE780031BE36 /* MY Bark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 280130302AE8AE770031BE36 /* MY Bark.jpg */; };
+		2801303E2AE8AE780031BE36 /* Plant White butterfly pot N211122 scn.scn in Resources */ = {isa = PBXBuildFile; fileRef = 280130312AE8AE770031BE36 /* Plant White butterfly pot N211122 scn.scn */; };
+		2801303F2AE8AE780031BE36 /* leaves.png in Resources */ = {isa = PBXBuildFile; fileRef = 280130322AE8AE780031BE36 /* leaves.png */; };
+		280130402AE8AE780031BE36 /* leaves-O.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 280130332AE8AE780031BE36 /* leaves-O.jpg */; };
+		280130412AE8AE780031BE36 /* txGround.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 280130342AE8AE780031BE36 /* txGround.jpg */; };
+		280130422AE8AE780031BE36 /* Plant White butterfly pot N211122.obj in Resources */ = {isa = PBXBuildFile; fileRef = 280130352AE8AE780031BE36 /* Plant White butterfly pot N211122.obj */; };
+		280130432AE8AE780031BE36 /* MY Bark.png in Resources */ = {isa = PBXBuildFile; fileRef = 280130362AE8AE780031BE36 /* MY Bark.png */; };
+		280130442AE8AE780031BE36 /* Flowertx.png in Resources */ = {isa = PBXBuildFile; fileRef = 280130372AE8AE780031BE36 /* Flowertx.png */; };
+		280130452AE8AE780031BE36 /* leaves-O.png in Resources */ = {isa = PBXBuildFile; fileRef = 280130382AE8AE780031BE36 /* leaves-O.png */; };
+		280130462AE8AE780031BE36 /* txGround.png in Resources */ = {isa = PBXBuildFile; fileRef = 280130392AE8AE780031BE36 /* txGround.png */; };
+		280130472AE8AE780031BE36 /* Plant White butterfly pot N211122.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 2801303A2AE8AE780031BE36 /* Plant White butterfly pot N211122.mtl */; };
+		7325CD5122749E42002B38B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325CD5022749E42002B38B8 /* AppDelegate.swift */; };
+		7325CD5322749E42002B38B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325CD5222749E42002B38B8 /* ViewController.swift */; };
+		7325CD5622749E42002B38B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7325CD5422749E42002B38B8 /* Main.storyboard */; };
+		7325CD5822749E45002B38B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7325CD5722749E45002B38B8 /* Assets.xcassets */; };
+		7325CD5B22749E45002B38B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7325CD5922749E45002B38B8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		280011F62AE9340400E8D2F8 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		280011FE2AE9360900E8D2F8 /* SceneKitTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SceneKitTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		280011FF2AE9360A00E8D2F8 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		280012012AE9363B00E8D2F8 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		280130042AE8AB000031BE36 /* 12222_Cat_v1_l3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12222_Cat_v1_l3.obj; sourceTree = "<group>"; };
+		280130052AE8AB000031BE36 /* Cat_bump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cat_bump.jpg; sourceTree = "<group>"; };
+		280130062AE8AB000031BE36 /* Cat_diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cat_diffuse.jpg; sourceTree = "<group>"; };
+		280130072AE8AB000031BE36 /* 12222_Cat_v1_l3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12222_Cat_v1_l3.mtl; sourceTree = "<group>"; };
+		2801300D2AE8AB580031BE36 /* 12270_Frog_v1_L3.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12270_Frog_v1_L3.obj; sourceTree = "<group>"; };
+		2801300E2AE8AB590031BE36 /* 12270_Frog_v1_L3.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 12270_Frog_v1_L3.mtl; sourceTree = "<group>"; };
+		2801300F2AE8AB590031BE36 /* frog_diff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frog_diff.jpg; sourceTree = "<group>"; };
+		2801302E2AE8AE770031BE36 /* Flowertx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Flowertx.jpg; sourceTree = "<group>"; };
+		2801302F2AE8AE770031BE36 /* leaves.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leaves.jpg; sourceTree = "<group>"; };
+		280130302AE8AE770031BE36 /* MY Bark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MY Bark.jpg"; sourceTree = "<group>"; };
+		280130312AE8AE770031BE36 /* Plant White butterfly pot N211122 scn.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Plant White butterfly pot N211122 scn.scn"; sourceTree = "<group>"; };
+		280130322AE8AE780031BE36 /* leaves.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaves.png; sourceTree = "<group>"; };
+		280130332AE8AE780031BE36 /* leaves-O.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "leaves-O.jpg"; sourceTree = "<group>"; };
+		280130342AE8AE780031BE36 /* txGround.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = txGround.jpg; sourceTree = "<group>"; };
+		280130352AE8AE780031BE36 /* Plant White butterfly pot N211122.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Plant White butterfly pot N211122.obj"; sourceTree = "<group>"; };
+		280130362AE8AE780031BE36 /* MY Bark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MY Bark.png"; sourceTree = "<group>"; };
+		280130372AE8AE780031BE36 /* Flowertx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flowertx.png; sourceTree = "<group>"; };
+		280130382AE8AE780031BE36 /* leaves-O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leaves-O.png"; sourceTree = "<group>"; };
+		280130392AE8AE780031BE36 /* txGround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txGround.png; sourceTree = "<group>"; };
+		2801303A2AE8AE780031BE36 /* Plant White butterfly pot N211122.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Plant White butterfly pot N211122.mtl"; sourceTree = "<group>"; };
+		7325CD4D22749E42002B38B8 /* SceneKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SceneKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7325CD5022749E42002B38B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7325CD5222749E42002B38B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7325CD5522749E42002B38B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7325CD5722749E45002B38B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7325CD5A22749E45002B38B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7325CD5C22749E45002B38B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7325CD4A22749E42002B38B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280011F82AE9343E00E8D2F8 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		280012022AE9364800E8D2F8 /* OpenCVWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				280011FF2AE9360A00E8D2F8 /* OpenCVWrapper.mm */,
+				280012012AE9363B00E8D2F8 /* OpenCVWrapper.h */,
+			);
+			path = OpenCVWrapper;
+			sourceTree = "<group>";
+		};
+		280130032AE8AADF0031BE36 /* cat2 */ = {
+			isa = PBXGroup;
+			children = (
+				280130072AE8AB000031BE36 /* 12222_Cat_v1_l3.mtl */,
+				280130042AE8AB000031BE36 /* 12222_Cat_v1_l3.obj */,
+				280130052AE8AB000031BE36 /* Cat_bump.jpg */,
+				280130062AE8AB000031BE36 /* Cat_diffuse.jpg */,
+			);
+			path = cat2;
+			sourceTree = "<group>";
+		};
+		2801300C2AE8AB380031BE36 /* frog2 */ = {
+			isa = PBXGroup;
+			children = (
+				2801300E2AE8AB590031BE36 /* 12270_Frog_v1_L3.mtl */,
+				2801300D2AE8AB580031BE36 /* 12270_Frog_v1_L3.obj */,
+				2801300F2AE8AB590031BE36 /* frog_diff.jpg */,
+			);
+			path = frog2;
+			sourceTree = "<group>";
+		};
+		280130132AE8ADE80031BE36 /* plant */ = {
+			isa = PBXGroup;
+			children = (
+				2801302E2AE8AE770031BE36 /* Flowertx.jpg */,
+				280130372AE8AE780031BE36 /* Flowertx.png */,
+				280130332AE8AE780031BE36 /* leaves-O.jpg */,
+				280130382AE8AE780031BE36 /* leaves-O.png */,
+				2801302F2AE8AE770031BE36 /* leaves.jpg */,
+				280130322AE8AE780031BE36 /* leaves.png */,
+				280130302AE8AE770031BE36 /* MY Bark.jpg */,
+				280130362AE8AE780031BE36 /* MY Bark.png */,
+				280130312AE8AE770031BE36 /* Plant White butterfly pot N211122 scn.scn */,
+				2801303A2AE8AE780031BE36 /* Plant White butterfly pot N211122.mtl */,
+				280130352AE8AE780031BE36 /* Plant White butterfly pot N211122.obj */,
+				280130342AE8AE780031BE36 /* txGround.jpg */,
+				280130392AE8AE780031BE36 /* txGround.png */,
+			);
+			path = plant;
+			sourceTree = "<group>";
+		};
+		7325CD4422749E42002B38B8 = {
+			isa = PBXGroup;
+			children = (
+				7325CD4F22749E42002B38B8 /* SceneKitTest */,
+				7325CD4E22749E42002B38B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7325CD4E22749E42002B38B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7325CD4D22749E42002B38B8 /* SceneKitTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7325CD4F22749E42002B38B8 /* SceneKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				280012022AE9364800E8D2F8 /* OpenCVWrapper */,
+				280011F62AE9340400E8D2F8 /* opencv2.framework */,
+				280130132AE8ADE80031BE36 /* plant */,
+				2801300C2AE8AB380031BE36 /* frog2 */,
+				280130032AE8AADF0031BE36 /* cat2 */,
+				7325CD5022749E42002B38B8 /* AppDelegate.swift */,
+				7325CD5222749E42002B38B8 /* ViewController.swift */,
+				7325CD5422749E42002B38B8 /* Main.storyboard */,
+				7325CD5722749E45002B38B8 /* Assets.xcassets */,
+				7325CD5922749E45002B38B8 /* LaunchScreen.storyboard */,
+				7325CD5C22749E45002B38B8 /* Info.plist */,
+				280011FE2AE9360900E8D2F8 /* SceneKitTest-Bridging-Header.h */,
+			);
+			path = SceneKitTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7325CD4C22749E42002B38B8 /* SceneKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7325CD7522749E46002B38B8 /* Build configuration list for PBXNativeTarget "SceneKitTest" */;
+			buildPhases = (
+				7325CD4922749E42002B38B8 /* Sources */,
+				7325CD4A22749E42002B38B8 /* Frameworks */,
+				7325CD4B22749E42002B38B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SceneKitTest;
+			productName = SceneKitTest;
+			productReference = 7325CD4D22749E42002B38B8 /* SceneKitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7325CD4522749E42002B38B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = liu_temp;
+				TargetAttributes = {
+					7325CD4C22749E42002B38B8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1430;
+					};
+				};
+			};
+			buildConfigurationList = 7325CD4822749E42002B38B8 /* Build configuration list for PBXProject "SceneKitTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7325CD4422749E42002B38B8;
+			productRefGroup = 7325CD4E22749E42002B38B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7325CD4C22749E42002B38B8 /* SceneKitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7325CD4B22749E42002B38B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280130472AE8AE780031BE36 /* Plant White butterfly pot N211122.mtl in Resources */,
+				2801300B2AE8AB000031BE36 /* 12222_Cat_v1_l3.mtl in Resources */,
+				280130462AE8AE780031BE36 /* txGround.png in Resources */,
+				2801303E2AE8AE780031BE36 /* Plant White butterfly pot N211122 scn.scn in Resources */,
+				2801300A2AE8AB000031BE36 /* Cat_diffuse.jpg in Resources */,
+				280130082AE8AB000031BE36 /* 12222_Cat_v1_l3.obj in Resources */,
+				280130432AE8AE780031BE36 /* MY Bark.png in Resources */,
+				280130442AE8AE780031BE36 /* Flowertx.png in Resources */,
+				280130102AE8AB590031BE36 /* 12270_Frog_v1_L3.obj in Resources */,
+				2801303F2AE8AE780031BE36 /* leaves.png in Resources */,
+				280130412AE8AE780031BE36 /* txGround.jpg in Resources */,
+				280130422AE8AE780031BE36 /* Plant White butterfly pot N211122.obj in Resources */,
+				7325CD5B22749E45002B38B8 /* LaunchScreen.storyboard in Resources */,
+				280130402AE8AE780031BE36 /* leaves-O.jpg in Resources */,
+				7325CD5822749E45002B38B8 /* Assets.xcassets in Resources */,
+				2801303C2AE8AE780031BE36 /* leaves.jpg in Resources */,
+				280130092AE8AB000031BE36 /* Cat_bump.jpg in Resources */,
+				280130112AE8AB590031BE36 /* 12270_Frog_v1_L3.mtl in Resources */,
+				280130452AE8AE780031BE36 /* leaves-O.png in Resources */,
+				7325CD5622749E42002B38B8 /* Main.storyboard in Resources */,
+				280130122AE8AB590031BE36 /* frog_diff.jpg in Resources */,
+				2801303D2AE8AE780031BE36 /* MY Bark.jpg in Resources */,
+				2801303B2AE8AE780031BE36 /* Flowertx.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7325CD4922749E42002B38B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				280012032AE9384D00E8D2F8 /* opencv2.framework in Sources */,
+				7325CD5322749E42002B38B8 /* ViewController.swift in Sources */,
+				7325CD5122749E42002B38B8 /* AppDelegate.swift in Sources */,
+				280012002AE9360A00E8D2F8 /* OpenCVWrapper.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7325CD5422749E42002B38B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7325CD5522749E42002B38B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7325CD5922749E45002B38B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7325CD5A22749E45002B38B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7325CD7322749E46002B38B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7325CD7422749E46002B38B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7325CD7622749E46002B38B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SceneKitTest/cat2",
+					"$(PROJECT_DIR)/SceneKitTest",
+				);
+				INFOPLIST_FILE = SceneKitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tempdeltaapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKitTest/SceneKitTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7325CD7722749E46002B38B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SceneKitTest/cat2",
+					"$(PROJECT_DIR)/SceneKitTest",
+				);
+				INFOPLIST_FILE = SceneKitTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tempdeltaapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SceneKitTest/SceneKitTest-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7325CD4822749E42002B38B8 /* Build configuration list for PBXProject "SceneKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7325CD7322749E46002B38B8 /* Debug */,
+				7325CD7422749E46002B38B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7325CD7522749E46002B38B8 /* Build configuration list for PBXNativeTarget "SceneKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7325CD7622749E46002B38B8 /* Debug */,
+				7325CD7722749E46002B38B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7325CD4522749E42002B38B8 /* Project object */;
+}
